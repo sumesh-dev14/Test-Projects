@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.heads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+.h1-tag{
+    font-family: "Merriweather", serif;
+    font-weight: 0.5px;
+    font-size: 40px;
+}
+.work{
+    font-family: "Lato", sans-serif;
+    margin-top: 8px;
+    font-size: 18px;  
+}
+.line{
+  border: none;               
+  height: 2px;                
+  background-color: #333;   
+  /* margin: 20px 0;             */
+  width: 80%;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+
+}
+
+.abt-me{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: beige; */
+}
+
+.bio{
+    font-family:"Lato", sans-serif;
+    font-weight: 600;
+    padding-bottom: 12px;
+    font-size: 30px;
+}
+.para{
+    width: 70%;
+    font-family:"Lato", sans-serif;
+    padding-bottom: 15px;
+}
+.contacts{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: #f5f5dc;  */
+  padding: 20px;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+.phone-cls{
+
+}
