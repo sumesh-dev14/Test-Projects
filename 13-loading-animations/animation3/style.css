@@ -1,0 +1,33 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container,.ring{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.ring{
+    border-radius: 50%;
+}
+.circle1{
+    height: 200px;
+    width: 200px;
+    background-color: #282828;
+}
+.circle2{
+    height: 150px;
+    width: 150px;
+    background-color: #2892f9;
+}
+.circle3{
+    height: 100px;
+    width: 100px;
+    background-color: #fb2f27;
+}
+.circle4{
+    height: 50px;
+    width: 50px;
+    background-color: #fdfe29;
+}

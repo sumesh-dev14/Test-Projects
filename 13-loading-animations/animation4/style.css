@@ -1,0 +1,38 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins' , sans-serif;
+}
+.h1:after{
+    content: "";
+    animation: 2s swap infinite;
+}
+@keyframes swap{
+    0%{
+        content: " gym"
+
+    }
+    25%{
+        content: " sports"
+
+    }
+    50%{
+        content: " coding"
+
+    }
+    75%{
+        content: " eating"
+
+    }
+
+    100%{
+        content: " gym"
+
+    }
+}

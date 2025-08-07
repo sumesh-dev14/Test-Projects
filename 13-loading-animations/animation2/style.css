@@ -1,0 +1,39 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.square{
+    height: 1.5em;
+    width: 1.5em;
+    margin: .5em;
+    background-color: black;
+    animation: rotate infinite 1s;
+    
+}
+.color1{
+    background-color: red;
+}
+.color2{
+    background-color: orange;
+}
+.color3{
+    background-color: blue;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-45deg);
+
+
+    }
+    to{
+        transform: rotate(45deg);
+
+    }
+
+}
