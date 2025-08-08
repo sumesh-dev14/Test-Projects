@@ -1,0 +1,38 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+:root{
+    
+    --white: #FFFFFF;
+    --red: #FC3E32;
+    --green: #007E39;
+    --flag-height: 150px;
+    --flag-width: calc(var(--flag-height) * 3 / 2);
+}
+.flg-madacser{
+    height: var(--flag-height);
+    /* width: var(--flag-width); */
+    /* background-color: var(--white); */
+    margin: 2em auto;
+    display: flex;
+    margin-left: 30px;
+}
+.white{
+    background-color: var(--white);
+    width: 75px;
+}
+.red {
+    background: var(--red);
+    height: 50%;
+    width: var(--flag-height);
+}
+
+.green {
+    background: var(--green);
+    height: 50%;
+}
+
+
+
