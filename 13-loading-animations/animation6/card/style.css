@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+:root {
+    --card-height: 200px;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    border: 1px solid #000;
+    height: var(--card-height);
+    width: calc(var(--card-height)* 2/3);
+    border-radius: 5px;
+    display: grid;
+    padding: .5em;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    font-size: 2em;
+}
+.bottom{
+    transform: rotate(180deg);
+}
+.top > div:first-child, 
+.bottom > div:first-child {
+    font-size: 20px;
+    padding-left: 2px;
+}
