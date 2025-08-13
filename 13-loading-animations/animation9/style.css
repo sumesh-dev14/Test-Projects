@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+    color: var(--font-color);
+    font-family: var(--font);
+}
+
+:root {
+    --font: 'Karla', sans-serif;
+    --font-color: #fff;
+    --grad1: #feda75;
+    --grad2: #fa7e1e;
+    --grad3: #d62976;
+    --grad4: #962fbf;
+    --grad5: #4f5bd5;
+    --viewed: gray;
+    --bg-main: #000;
+    --bg-live: red; 
+}
+.stories-menu{
+    padding: 0;
+    list-style-type: none;
+}
+.img-wrapper{
+    height: 60px;
+    width: 60px;
+    background: wheat;
+}
+.img{
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
