@@ -1,0 +1,41 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+:root {
+    --progressbar-bg: lightgrey;
+    --start: red;
+    --middle: blue;
+    --finish: green;
+} 
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* width: 80%;
+    margin: 3rem auto; */
+}
+.progress-bar{
+    width: 30%;
+    height: 1.5rem;
+    background-color: var(--progressbar-bg);
+    border-radius: 20px;
+}
+.progress-status{
+    width: 10%;
+    background-color: var(--start);
+    animation: 6s linear showprogress infinite;
+}
+@keyframes showprogress{
+    50%{
+        width: 50%;
+        background-color: var(--middle);
+    }
+    100%{
+        width: 100%;
+        background-color: var(--finish);
+    }
+}
