@@ -1,0 +1,24 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    margin: 30px auto;
+    background-color: #FF0002;
+}
+.line{
+    width: calc(200px * 5/8);
+    height: calc(200px * 3/16);
+    background-color: white;
+}
+.line-up{
+    width: calc(200px * 3/16);
+    height: calc(200px * 5/8);
+    background-color: white;
+    position: absolute;
+}
