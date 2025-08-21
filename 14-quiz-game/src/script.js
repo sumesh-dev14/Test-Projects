@@ -67,3 +67,5 @@ let currentQuestionIndex = 0;
 let score = 0;
 let answerDisable = false;
 
+console.log("hello");
+
