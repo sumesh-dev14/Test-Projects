@@ -1,106 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="" />
-    <title>Document</title>
-    <style>
-        body{
-            background-color: #f8f9fa;
-        }
-      .navbar-brand {
-        font-size: 1.5rem;
-        margin-left: 30px;
-      }
-      nav {
-        background-color: #343a40;
-      }
-      .nav-link {
-        color: white;
-      }
-      .navbar-brand {
-        color: white;
-      }
 
-      .container-fluid {
-        color: white;
-      }
-      .collapse {
-        justify-content: end;
-      }
-      .container-cont{
-        width: 100%;
-        display: flex;
-        /* align-items: center; */
-        justify-content: center;
-        height: 100vh;
-      }
-      .hero-section{
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      h1{
-        line-height: 2.1rem;
-        text-align: justify;
-        color: #212529;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">MySite</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Contact</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <title>Bootstrap Card Layout</title>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      margin-left: 30px;
+      color: white;
+    }
+
+    nav {
+      background-color: #343a40;
+    }
+
+    .nav-link {
+      color: white;
+    }
+
+    .container-cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .hero-section {
+      text-align: center;
+    }
+
+    h1 {
+      color: #212529;
+      font-size: 40px;
+    }
+
+    p {
+      color: #868e96;
+    }
+
+    .btn-primary {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section>
+    <div class="container-cont">
+      <div class="hero-section">
+        <h1>Welcome To My <br />Bootstrap Page</h1>
+        <p>Build beautiful responsive layouts with ease <br />using Bootstrap components.</p>
+        <button type="button" class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/porche-car.jpg" class="card-img-top" alt="Porche Car" />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/lambo-car.jpg" class="card-img-top" alt="Lamborghini Car" />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/porche-back.jpg" class="card-img-top" alt="Porche Back" />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card’s content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <main>
-        <section>
-            <div class="container-cont">
-            <div class="hero-section">
-            <h1>Wekcome To My <br>BootStrap Page</h1>
-            <p>Build beautiful responsive layouts with ease <br>using Bootstrap components.</p>
-            <button type="button" class="btn btn-primary">Get Started</button>
-            </div>
-            </div>
-        </section>
-    </main>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6O/AA9P+LyTjoR2P6qU6Y5nI4y0vP5VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
