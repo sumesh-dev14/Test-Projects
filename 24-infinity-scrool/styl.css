@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.cont{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid red;
+    display: flex;
+    overflow-x: auto;
+}
+.cont::-webkit-scrollbar{
+    display: none;
+}
+.grp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
+
+}
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3em;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+    background: lightblue;
+}
+@keyframes spin {
+    from { translate: 0;}
+    to {translate: -100%;}
+}
