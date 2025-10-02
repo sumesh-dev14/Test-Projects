@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="bg-deepBlue">
       <div class="relative w-[1080px] mx-auto flex items-center justify-evenly">
         <!-- logo -->
@@ -87,17 +88,59 @@
             Login in
           </button>
           <button
-            class="bg-white text-lightBlue300 hover:text-lightBlue500 rounded-sm border font-semibold font-mullish py-3 px-3 text-sm transition-all duration-200 flex"
+            class="bg-white text-lightBlue300 hover:text-lightBlue500 rounded-sm border font-semibold font-mullish py-3 px-3 text-sm transition-all duration-200 flex items-center"
           >
             Sign up
-            <img
-              src="../images/sign-up-arrow.svg"
-              alt="arrow"
-              class="px-1 hover:text-lightBlue500 transition-all duration-200"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-4 h-4 ml-2"
+              fill="currentColor"
+            >
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
+            </svg>
           </button>
         </div>
       </div>
     </nav>
+    <!-- Hero Section -->
+    <section class="relative bg-deepBlue">
+      <div
+        class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto"
+      >
+        <!-- left part -->
+        <div class="space-y-8">
+          <h1
+            class="text-white text-[40px] font-mullish font-bold leading-[1.2]"
+          >
+            Power your finance, grow your business
+          </h1>
+          <div class="w-6 h-1 bg-greenLight"></div>
+          <p class="font-mullish text-[18px] leading-7 text-white opacity-70">
+            Accept payments from customers. Automate payouts to vendors &
+            employees. Never run out of working capital.
+          </p>
+          <button
+            class="px-1 py-3 w-32 text-sm text-white font-bold bg-lightBlue hover:bg-lightBlue500 transition-all duration-200 rounded-md font-mullish"
+          >
+            Sign Up Now
+          </button>
+        </div>
+        <!-- right part -->
+        <img
+          src="../images/hero-illustration.jpg"
+          alt=""
+          class="max-w-[680px]"
+        />
+      </div>
+      <!-- tringale img -->
+      <div>
+        <img
+          src="../images/hero-shape.svg"
+          alt=""
+          class="absolute left-0 right-0 w-[100%] overflow-hidden"
+        />
+      </div>
+    </section>
   </body>
 </html>
