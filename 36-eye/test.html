@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eye Follow</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+  }
+  .eye {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .pupil {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transition: transform 0.1s;
+  }
+</style>
+</head>
+<body>
+  <div class="eye"><div class="pupil"></div></div>
+  <div class="eye"><div class="pupil"></div></div>
+
+<script>
+  const eyes = document.querySelectorAll('.eye');
+  document.addEventListener('mousemove', (e) => {
+    eyes.forEach(eye => {
+      const pupil = eye.querySelector('.pupil');
+      const rect = eye.getBoundingClientRect();
+      const x = e.clientX - (rect.left + rect.width / 2);
+      const y = e.clientY - (rect.top + rect.height / 2);
+      const angle = Math.atan2(y, x);
+      const maxMove = 15;
+      const moveX = Math.cos(angle) * maxMove;
+      const moveY = Math.sin(angle) * maxMove;
+      pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+  });
+</script>
+</body>
+</html>
