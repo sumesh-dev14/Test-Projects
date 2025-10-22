@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: black;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      #color {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        background-color: #555;
+      }
+      button{
+        padding: .5rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="color"></div>
+    <div class="btn-cont">
+      <button id="red">Red</button>
+      <button id="yellow">Yellow</button>
+      <button id="green">Green</button>
+    </div>
+    <script>
+      const circle = document.getElementById('color');
+      const redBtn = document.getElementById('red');
+      const yellowBtn = document.getElementById('yellow');
+      const greenBtn = document.getElementById('green');
+
+      redBtn.addEventListener("click" , () => {
+        circle.style.backgroundColor = "#FF0000"
+      })
+
+      yellowBtn.addEventListener("click" , () => {
+        circle.style.backgroundColor = "#FFFF00"
+      })
+
+      greenBtn.addEventListener("click" , () => {
+        circle.style.backgroundColor = "#00FF00"
+      })
+
+
+    </script>
+  </body>
+</html>

@@ -1,5 +1,4 @@
 const press = document.querySelector(".square");
-
 const y = document.querySelector(".yelo");
 const btngren = document.querySelector(".gren");
 const re = document.querySelector(".reset");
