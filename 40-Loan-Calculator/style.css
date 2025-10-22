@@ -15,7 +15,6 @@ body{
 }
 .container{
     width: 400px;
-    height: 350px;
     background-color: #222831;
     border: 1px solid black;
     border-radius: 10px;
@@ -47,7 +46,5 @@ button{
     border: 1px solid black;
     border-radius: 5px;
     font-size: 14px;
-}
-.result{
-    
+    margin-bottom: 20px;
 }
