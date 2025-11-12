@@ -26,9 +26,14 @@ h1{
 .imgcont{
     width: 50%;
     height: 50%;
-    background: #000;
+    /* background: #000; */
     margin: 3rem;
     border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    width: 350px;
+    height: 350px;
 }
 button{
     width: 80%;
