@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="font-sans bg-[#121212] text-white flex justify-center items-center h-screen"
+  >
+    <div
+      class="container bg-[#1e1e1e] p-6 rounded-lg w-[300px] shadow-lg shadow-black/20"
+    >
+      <h1 class="text-center mb-5 text-2xl">Todo List</h1>
+
+      <div class="input-container flex justify-between mb-5">
+        <input
+          type="text"
+          class="w-[70%] p-2.5 bg-[#333333] border-none rounded-md text-white outline-none"
+        />
+
+        <button
+          class="w-[25%] p-2.5 bg-[#6200ea] rounded-md text-white cursor-pointer transition-colors hover:bg-[#3700b3]"
+        >
+          Add
+        </button>
+      </div>
+
+      <ul class="list-none p-0">
+        <li
+          class="bg-[#333333] p-2.5 mb-2.5 rounded-md flex justify-between items-center"
+        >
+          <span>Task 1</span>
+          <button
+            class="bg-[#d32f2f] text-white p-1.5 rounded-md hover:bg-[#b71c1c]"
+          >
+            X
+          </button>
+        </li>
+
+        <li
+          class="bg-[#333333] p-2.5 mb-2.5 rounded-md flex justify-between items-center line-through opacity-70"
+        >
+          <span>Completed Task</span>
+          <button
+            class="bg-[#d32f2f] text-white p-1.5 rounded-md hover:bg-[#b71c1c]"
+          >
+            X
+          </button>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
