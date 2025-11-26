@@ -18,38 +18,19 @@
         <input
           type="text"
           class="w-[70%] p-2.5 bg-[#333333] border-none rounded-md text-white outline-none"
+          placeholder="Enter a task"
+          id="todo-input"
         />
 
         <button
           class="w-[25%] p-2.5 bg-[#6200ea] rounded-md text-white cursor-pointer transition-colors hover:bg-[#3700b3]"
+          id="add-task-btn"
         >
           Add
         </button>
       </div>
 
-      <ul class="list-none p-0">
-        <li
-          class="bg-[#333333] p-2.5 mb-2.5 rounded-md flex justify-between items-center"
-        >
-          <span>Task 1</span>
-          <button
-            class="bg-[#d32f2f] text-white p-1.5 rounded-md hover:bg-[#b71c1c]"
-          >
-            X
-          </button>
-        </li>
-
-        <li
-          class="bg-[#333333] p-2.5 mb-2.5 rounded-md flex justify-between items-center line-through opacity-70"
-        >
-          <span>Completed Task</span>
-          <button
-            class="bg-[#d32f2f] text-white p-1.5 rounded-md hover:bg-[#b71c1c]"
-          >
-            X
-          </button>
-        </li>
-      </ul>
+      <ul class="list-none p-0" id="list-items"></ul>
     </div>
     <script src="script.js"></script>
   </body>
