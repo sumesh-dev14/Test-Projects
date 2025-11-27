@@ -1,0 +1,76 @@
+/* Background image */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./backgroundImage.jpg') no-repeat center center/cover;
+    color: #F5F2EA; /* light ivory text */
+}
+
+/* Center content */
+.container {
+    text-align: center;
+}
+
+/* Search bar */
+.search-box {
+    width: 280px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(74, 92, 106, 0.4); /* slate blue border */
+    background: rgba(230, 231, 227, 0.3); /* light mist grey transparent */
+    color: #0C1B26; /* deep navy text */
+    outline: none;
+    backdrop-filter: blur(6px);
+}
+
+.search-box::placeholder {
+    color: #1F2D3A;
+}
+
+/* City name */
+.city {
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Date */
+.date {
+    font-size: 14px;
+    color: #8FA1AE; /* pale blue-grey */
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+/* Big temperature */
+.temp {
+    font-size: 88px;
+    font-weight: 800;
+    margin: 20px 0 10px 0;
+    color: #F5F2EA;
+    text-shadow: 5px 5px 10px rgba(12, 27, 38, 0.8); /* strong navy shadow */
+}
+
+.temp span {
+    font-size: 40px;
+    vertical-align: super;
+}
+
+/* Weather condition */
+.weather {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+/* Min / Max temp */
+.minmax {
+    font-size: 15px;
+    color: #8FA1AE;
+    margin-top: 8px;
+}
