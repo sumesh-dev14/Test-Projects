@@ -8,15 +8,13 @@ body {
     justify-content: center;
     align-items: center;
     background: url('./backgroundImage.jpg') no-repeat center center/cover;
-    color: #F5F2EA; /* light ivory text */
+    color: #F5F2EA;
 }
-
-/* Center content */
 .container {
     text-align: center;
+    width: 60%;
 }
 
-/* Search bar */
 .search-box {
     width: 280px;
     padding: 12px 18px;
