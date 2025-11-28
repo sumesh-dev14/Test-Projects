@@ -1,4 +1,4 @@
-/* Background image */
+/* GLOBAL */
 body {
     margin: 0;
     padding: 0;
@@ -8,21 +8,44 @@ body {
     justify-content: center;
     align-items: center;
     background: url('./backgroundImage.jpg') no-repeat center center/cover;
-    color: #F5F2EA;
+    color: #F5F2EA; 
 }
+
+/* CARD CONTAINER */
 .container {
     text-align: center;
     width: 60%;
+    background: rgba(230, 231, 227, 0.18);
+    padding: 40px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(74, 92, 106, 0.4);
+}
+
+/* TITLE */
+.app-title {
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: #F5F2EA;
+    text-shadow: 2px 2px 8px rgba(12, 27, 38, 0.8);
+}
+
+/* INPUT BOX */
+.inputBox {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
 }
 
 .search-box {
-    width: 280px;
-    padding: 12px 18px;
-    font-size: 16px;
+    width: 260px;
+    padding: 12px 16px;
     border-radius: 10px;
-    border: 1px solid rgba(74, 92, 106, 0.4); /* slate blue border */
-    background: rgba(230, 231, 227, 0.3); /* light mist grey transparent */
-    color: #0C1B26; /* deep navy text */
+    background: rgba(230, 231, 227, 0.28);
+    border: 1px solid rgba(74, 92, 106, 0.4);
+    color: #0C1B26;
+    font-size: 16px;
     outline: none;
     backdrop-filter: blur(6px);
 }
@@ -31,44 +54,79 @@ body {
     color: #1F2D3A;
 }
 
-/* City name */
-.city {
-    margin-top: 25px;
-    font-size: 28px;
-    font-weight: 500;
-}
-
-/* Date */
-.date {
-    font-size: 14px;
-    color: #8FA1AE; /* pale blue-grey */
-    letter-spacing: 0.5px;
-    margin-top: 5px;
-}
-
-/* Big temperature */
-.temp {
-    font-size: 88px;
-    font-weight: 800;
-    margin: 20px 0 10px 0;
+#weatherBtn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #1F2D3A;
     color: #F5F2EA;
-    text-shadow: 5px 5px 10px rgba(12, 27, 38, 0.8); /* strong navy shadow */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
-.temp span {
-    font-size: 40px;
-    vertical-align: super;
+#weatherBtn:hover {
+    background: #4A5C6A;
 }
 
-/* Weather condition */
-.weather {
-    font-size: 26px;
-    margin-top: 10px;
+/* WEATHER OUTPUT (HIDDEN INITIALLY) */
+.hidden {
+    display: none;
 }
 
-/* Min / Max temp */
+/* WEATHER INFO */
+.weather-box {
+    margin-top: 20px;
+    animation: fadeIn 0.6s ease;
+}
+
+.date {
+    color: #8FA1AE;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.city {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 5px;
+    color: #F5F2EA;
+}
+
+.temp {
+    font-size: 75px;
+    font-weight: 800;
+    text-shadow: 5px 5px 12px rgba(12, 27, 38, 0.9);
+    margin: 5px 0;
+}
+
+.weather-type {
+    font-size: 28px;
+    margin-top: 8px;
+}
+
 .minmax {
     font-size: 15px;
     color: #8FA1AE;
-    margin-top: 8px;
+    margin-top: 5px;
+}
+#error-message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #FF6B6B; /* soft red */
+    background: rgba(255, 107, 107, 0.15);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 107, 107, 0.4);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.4s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

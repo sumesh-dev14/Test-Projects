@@ -6,17 +6,39 @@
     <title>Weather UI</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
-      <h1>Weather App</h1>
+      <h1 class="app-title">Weather App</h1>
+
+      <!-- Input Box -->
       <div class="inputBox">
-        <input type="text" class="search-box" />
-        <button id="weatherBtn">Get weather</button>
+        <input
+          type="text"
+          id="searchBox"
+          class="search-box"
+          placeholder="Enter city name..."
+        />
+        <button id="weatherBtn">Search</button>
       </div>
-      <p class="date"><span>Sunday 22 nov 2025</span></p>
-      <h2 class="city">Delhi</h2>
-      <h1 id="temp">23 C</h1>
-      <p id="weather-type">fog</p>
+
+      <!-- Weather Output Section (Hidden before search) -->
+      <div id="weatherOutput" class="weather-box hidden">
+        <p class="date" id="date"></p>
+
+        <h2 class="city" id="city"></h2>
+
+        <h1 class="temp" id="temp"></h1>
+
+        <p class="weather-type" id="weatherType"></p>
+
+        <p class="minmax" id="minmax"></p>
+      </div>
+
+      <!-- In case of Error -->
+      <p id="error-message" class="hidden">City not Found. Please try again</p>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
