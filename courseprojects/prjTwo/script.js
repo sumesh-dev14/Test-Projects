@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { // loading dom 
   const searchBox = document.querySelector("#searchBox");
   const weatherBtn = document.querySelector("#weatherBtn");
   const weatherOutput = document.querySelector("#weatherOutput");
@@ -7,14 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const temp = document.querySelector("#temp");
   const weatherType = document.querySelector("#weatherType");
   const errorMessage = document.querySelector("#error-message");
+// above all are selectors
 
-  const API_KEY = "22333e0de4c73aa107f953c4fed951f7";
-  weatherBtn.addEventListener("click", async () => {
-    const cityName = searchBox.value.trim();
-    if (!cityName) return;
+
+  const API_KEY = "22333e0de4c73aa107f953c4fed951f7"; // api key 
+  weatherBtn.addEventListener("click", async () => { // listening event 
+    const cityName = searchBox.value.trim(); // getting the vale in input
+    if (!cityName) return; // not entred the city name return 
     // server may thrown an error
     // server / database is always in anothe continent
-    try {
+    try { 
       const weatherData = await fetchWeatheData(cityName);
       displayWeatheData(weatherData);
     } catch (error) {
