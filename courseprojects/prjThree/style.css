@@ -41,7 +41,6 @@ h2 {
   align-items: center;
   border-radius: 5px;
 }
-
 .product button {
   background-color: #6200ea;
   border: none;
@@ -51,10 +50,34 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .product button:hover {
   background-color: #3700b3;
 }
+.removeProduct{
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+
+}
+.removeBtn{
+  background-color: #DC3545;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.removeBtn:hover{
+  background-color: #B71F2A;
+}
+
+
+
 
 #cart-items {
   margin-bottom: 20px;
