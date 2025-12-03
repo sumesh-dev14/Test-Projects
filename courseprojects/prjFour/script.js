@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // event delegation that if a user only click on delete btn it will work
-  expenseList.addEventListener("click", () => {
+  expenseList.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
       // getting the btn id and deleting it
       let expenseId = parseInt(e.target.getAttribute("data-id"));
